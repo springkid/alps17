@@ -1,4 +1,6 @@
-"discogs": {
-  "consumerKey": "gwzFOIlGIVAUGDgJFaoX",
-  "consumerSecret": "PxPtJsZvQlohIaWZHSTEhstfGxLXEBjI"
+{
+	"discogs": {
+		"consumerKey": "gwzFOIlGIVAUGDgJFaoX",
+		"consumerSecret": "PxPtJsZvQlohIaWZHSTEhstfGxLXEBjI"
+	}
 }
