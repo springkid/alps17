@@ -1,5 +1,5 @@
 <head>
-  <title>AL PS 2017</title>
+  <title>ALPS</title>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">ALPS17</a>
+      <a class="navbar-brand" href="#">ALPS</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,8 +29,6 @@
 </nav>
 
 {{> searchContent }}
-<br>
-{{> searchResults }}
 
 <hr>
 
@@ -47,23 +45,23 @@
         <form class="form-inline">
           <div class="form-group">
             <input type="text" id="searchAndAddArtist" class="form-control" placeholder="Add artist ...">
-            <button type="submit" class="btn btn-default" id="">Submit</button>
+            <button type="submit" class="btn btn-default" id="js-search-discogs">Submit</button>
           </div>
         </form> <!-- search -->
       </div>
     </div> <!-- row ends -->
-  </div>
-</template> <!-- searchContent template ends -->
 
-<template name="searchResults">
-  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        Search results go here ...
+        <ul>
+        {{#each searchResults}}
+          <li><a href="{{uri}}">{{title}}</a></li>
+        {{/each}}
+        </ul>
       </div>
-    </div>
+    </div> <!-- row de results ends -->
   </div>
-</template> <!-- searchResults template ends -->
+</template> <!-- searchContent template ends -->
 
 <template name="content">
   <div class="container">

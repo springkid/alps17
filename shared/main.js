@@ -1,0 +1,5 @@
+
+// Shared methods
+Meteor.methods({
+
+})
