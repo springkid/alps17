@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
+import '../imports/api/artists.js';
 
 Meteor.startup(() => {
 	// Instantiation of Discogs API keys
